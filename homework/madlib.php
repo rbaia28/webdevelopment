@@ -1,24 +1,35 @@
 <!DOCTYPE HTML>
+<html>
+<head>
+    <title> Madlibz</title>
+</head>
+
 <body>
 <div>
-<form action="site.php" method="get">
-    Color: <input type ="text" name = "color "><br/>
-    plural noun: <input type="text" name="pluralnoun"> <br/>
-    Celebrity: <input type="text" name="celebrity"><br/>
-    <input type="submit" name="submit" value="submit">
+<form action="site.php" method="post">
+    Color: <input type ="text" name = "color "/><br/>
+    plural noun: <input type="text" name="pluralnoun"/><br/>
+    Celebrity: <input type="text" name="celebrity"/><br/>
+    <input type="submit" name="submit-btn" value="go"/>
 </form>
-
-<br/><br/>
+</div>
 <?php
-    $color=$_GET["color"];
-    $pluralnoun = $_GET ["pluralnoun"];
-    $celebrity = $_GET ["celebrity"];
+if (isset($_POST['submit-btn'])) {
+    $color = '';
+    $pluralnoun = '';
+    $celebrity = '';
+
+    if(!empty($_POST['color'])){
+        
+    }
+}
+    $color=$_POST["color"];
+    $pluralnoun = $_POST ["pluralnoun"];
+    $celebrity = $_POST ["celebrity"];
     echo "Roses are $color <br/>";
     echo "$pluralnoun are blue <br/>";
     echo "I love $celebrity <br/>";
 
-if(isset($_POST['submit'])){
-    //tables will shown only after submitted
 }
 ?>
 <?php
