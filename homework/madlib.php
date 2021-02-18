@@ -5,7 +5,7 @@
     Color: <input type ="text" name = "color "><br/>
     plural noun: <input type="text" name="pluralnoun"> <br/>
     Celebrity: <input type="text" name="celebrity"><br/>
-    <input type="submit" name="submit" value="submit">
+    <input type="submit" name="submit-btn" value="submit">
 </form>
 
 <br/><br/>
@@ -19,7 +19,7 @@
 
 if(isset($_POST['submit'])){
     //tables will shown only after submitted
-}
+
 ?>
 <?php
 // This is a single line comment because the mac shortcut wont work in php
